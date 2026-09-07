@@ -8,3 +8,4 @@ foreach (int items in inventory)
     Console.WriteLine($"Bin {bin} = {items} items (Running total: {sum})");
 }
 Console.WriteLine($"We have {sum} items in inventory.");
+Console.WriteLine("Hola soy el Osman");
