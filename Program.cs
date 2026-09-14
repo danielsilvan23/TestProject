@@ -1,11 +1,20 @@
-﻿int examAssignments = 3;
+﻿string nombreEstudiante = "Roger";
 
-string[] alumnonombre = new string[] { "Roger" };
+double examen1 = 85.5;
+double examen2 = 92.0;
+double examen3 = 78.5;
 
-decimal[] calificacionesroger = new decimal[] { 85.5, 92.0, 78.5, 90 };
+double porcentajeAsistencia = 90;
 
-decimal[] calificacionesalumnos = new decimal[10];
 
-string letradelacalificacion= "";
+double promedioExamenes = (examen1 + examen2 + examen3) / 3;
 
-Console.WriteLine("Estudiante\t\tPromedio\tPorcentaje asistencia\tCalificación final");
+
+double calificacionFinal = (promedioExamenes * 0.8) + (porcentajeAsistencia * 0.2);
+
+
+Console.WriteLine("Estudiante\t\tPromedio\tAsistencia\tCalificación final");
+
+Console.WriteLine($"{nombreEstudiante}\t\t\t{promedioExamenes:F2}\t\t{porcentajeAsistencia}%\t\t{calificacionFinal:F2}");
+
+//Console.WriteLine($"Calificación Final: {calificacionFinal:F3}");
